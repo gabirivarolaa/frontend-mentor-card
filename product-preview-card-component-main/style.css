@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body{
+    font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+background-color: hsl(30, 38%, 92%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+
+    margin: 200px auto;
+    width: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card__texts{
+    background-color: hsl(0, 0%, 100%);
+    padding: 40px;
+}
+
+.card__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__product{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(228, 12%, 48%);
+}
+
+.card__title{
+    font-size: 3rem;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: hsl(212, 21%, 14%);
+    line-height: 45px;
+}
+
+.card__subtitle{
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    line-height: 25px;
+    color: hsl(228, 12%, 48%);
+}
+
+.card__description{
+    margin: 40px 0;
+}
+
+.prices{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    font-size: 2.5rem;
+}
+
+.price2{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.button{
+    margin-top: 40px;
+    background-color: hsl(158, 36%, 37%);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    padding: 18px 30px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button__img{
+    margin-right: 1em;
+}
+
+@media (max-width:768px){
+    .card{
+        margin: 40px auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .card__img{
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .card__texts{
+        padding: 35px;
+    }
+
+    .card__description{
+        margin: 15px auto;
+    }
+
+    .card__product{
+        font-size: 0.9rem;
+    }
+
+    .card__title{
+        font-size: 2rem;
+        margin-bottom: 10px;
+        line-height: 35px;
+    }
+
+    .card__subtitle{
+        font-size: 1rem;
+    }
+
+    .prices{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:480px){
+    .card{
+        margin: 40px auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .card__img{
+        height: 330px;
+        object-fit: cover;
+    }
+
+    .card__texts{
+        padding: 35px;
+    }
+
+    .card__description{
+        margin: 15px auto;
+    }
+
+    .card__product{
+        font-size: 0.9rem;
+    }
+
+    .card__title{
+        font-size: 2rem;
+        margin-bottom: 10px;
+        line-height: 35px;
+    }
+
+    .card__subtitle{
+        font-size: 1rem;
+    }
+
+    .prices{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:320px){
+    .card__texts{
+        padding: 20px;
+    }
+}
